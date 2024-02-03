@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sistema Solar</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="titulo">Calcula el peso de un objeto en otro planeta</h1>
+
+      <div class="formulario">
+        <input
+          class="input"
+          type="text"
+          id="mass"
+          placeholder="Peso en Kilogramos"
+        />
+        <select id="js-planet-select">
+          <option value="none">--Selecciona un planeta--</option>
+          <option value="Mercurio" data-image="mercury.png">MERCURIO</option>
+          <option value="Venus" data-image="venus.png">VENUS</option>
+          <option value="Tierra" data-image="earth.png">TIERRA</option>
+          <option value="Marte" data-image="mars.png">MARTE</option>
+          <option value="Jupiter" data-image="jupiter.png">JUPITER</option>
+          <option value="Saturno" data-image="saturn.png">SATURNO</option>
+          <option value="Urano" data-image="uranus.png">URANO</option>
+          <option value="Neptuno" data-image="neptune.png">NEPTUNO</option>
+        </select>
+        <button class="js-calcular">Calcular peso</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="flex-container">
+        <div class="flex-item image">
+          <img src="./images/earth.png" class="planet-image" />
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>
